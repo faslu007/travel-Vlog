@@ -1,0 +1,512 @@
+body{
+    margin-top: 0%;
+    padding: 0;
+    justify-content: space-evenly;
+}
+
+.navbar-container{
+    position: sticky;
+    top: 0;
+    background-color: #696969;
+    margin:0%;
+    padding-top:  10px;
+    padding-bottom: 0.01rem;
+    z-index: 9999;
+}
+
+.logoTitle{
+    font-size: 19px;
+    color: white;
+    font-weight: 500;
+}
+
+.searchBox{
+    background-color: transparent;
+    border-radius: 12px;
+    border-color: #faf9f4;
+    text-align: center;
+}
+
+.searcIcon{
+    color: #CACACA;
+}
+
+*:focus {
+    outline: none;
+    color: #e8e6e2;
+}
+
+input:focus {
+    border: 0px ;
+    border-color: #EEBF25;
+  }
+
+.searchbutton{
+    background-color: transparent;
+    border: none;
+}
+
+.dot{
+    margin: 0;
+    padding: 0;
+    color: red;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+
+.navBarText{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    text-align: center;
+}
+
+.navBarText:hover{
+    color: aliceblue;
+    text-decoration:underline ;
+}
+
+.heroSection{
+    width: 100%;
+    height: 100vh;
+    background-color: #696969;
+    margin:0%;
+    padding-top:  10px;
+    padding-bottom: 0.01rem;
+    background-image: url(./assets/pete-rojwongsuriya-new-2.png) ;
+    background-attachment: fixed;
+    background-size:53%;   
+    background-repeat:   no-repeat;
+    background-position: center top 150px;;
+}
+
+.heroWelcome{ 
+    color: #f2eeee;
+    font-size: 175px;
+    position: absolute;
+    left: 350px;
+    transition: all 1s ease;  
+}
+
+
+.heroWelcome:hover .spanfromName{
+    opacity: 100%; 
+    left: 300px;
+    font-size: 200px;
+    padding: 10px;
+    color: #bfd253;
+    background: rgba( 182, 182, 182, 0.1 );
+    /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+    backdrop-filter: blur( 10.5px );
+    -webkit-backdrop-filter: blur( 10.5px );
+    border-radius: 10px;
+    border-right:none ;
+
+    /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+    transition: all 1s ease;
+    z-index: 6666;
+}
+
+.heroWelcome:hover .spanfromName-01{
+    opacity: 100%; 
+    left: 300px;
+    font-size: 200px;
+    padding: 10px;
+    color: #bfd253;
+    background: rgba( 182, 182, 182, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10.5px );
+    -webkit-backdrop-filter: blur( 10.5px );
+    border-radius: 10px;
+    border-left:none ;
+    border-right: 1px solid rgba( 255, 255, 255, 0.18 );
+    transition: all 1s ease;
+    z-index: 6666;
+}
+
+.spanfromName{
+    opacity: 50%;
+    transition: all 1s ease;
+
+}
+
+.spanfromName:hover{
+    opacity: 100%
+}
+
+.peterName{
+    font-family: 'Alegreya', serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 75px;
+    color: #b3b1b1;
+    background: rgba( 182, 182, 182, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10.5px );
+    -webkit-backdrop-filter: blur( 10.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    font-weight: 700;
+    position: absolute;
+    top: 370px;
+    left: 75px;
+    transition: all 2s ease-in;
+    
+}
+
+.peterName:hover{
+    color: #EEBF25;
+    padding: 2%;
+    font-size: 100px;
+    background: rgba( 182, 182, 182, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba(217, 200, 16, 0.37);
+    backdrop-filter: blur( 10.5px );
+    -webkit-backdrop-filter: blur( 10.5px );
+    border-radius: 10px;
+    border: 1px solid  rgba(217, 200, 16, 0.37);
+    transition: all 1s ease;
+}
+
+/* .heroImg{
+    z-index: 9999;
+    position: absolute;
+    left: 200px;
+    transform-style: preserve-3d;
+} */
+
+
+.heroTexts{
+    position:absolute;
+    top: 500px;
+    left: 200px;
+    justify-content:space-evenly;
+    padding: 10px;
+    width: 300px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    color: #CACACA;
+    transition: all 1s ease-in;
+    background: rgba( 182, 182, 182, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10.5px );
+    -webkit-backdrop-filter: blur( 10.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.heroTexts:hover{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    width: 400px;
+    background: rgba( 182, 182, 182, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba(217, 200, 16, 0.37);
+    backdrop-filter: blur( 10.5px );
+    -webkit-backdrop-filter: blur( 10.5px );
+    border-radius: 10px;
+    border: 1px solid  rgba(217, 200, 16, 0.37);
+    padding: 20px;
+    transition: all 1s ease;
+    z-index: 6666;
+    color: #EEBF25;   
+}
+
+.heroTexts:hover .buttonHeroSection{
+    border-color: #EEBF25;
+    color: #eae8e1;
+    transition: all 1s ease;
+}
+
+
+.buttonHeroSection{
+    background-color: transparent;
+    color: #b3b1b1;
+    border-color: #f0f0f0;
+    border-radius: 12px;
+    transition: all 1s ease;
+}
+
+.heroTexts-01{
+    position:absolute;
+    top: 650px;
+    left: 300px;
+    justify-content:space-evenly;
+    padding: 10px;
+    width: 300px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    color: #CACACA;
+    transition: all 1s ease-in;
+    background: rgba( 182, 182, 182, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10.5px );
+    -webkit-backdrop-filter: blur( 10.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.heroTexts-01:hover{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    width: 400px;
+
+    background: rgba( 182, 182, 182, 0.1 );
+    box-shadow: 0 8px 32px 0  rgba(134, 230, 9, 0.37);
+    backdrop-filter: blur( 10.5px );
+    -webkit-backdrop-filter: blur( 10.5px );
+    border-radius: 10px;
+    border: 1px solid  rgba(134, 230, 9, 0.37);
+   
+   
+    padding: 20px;
+    transition: all 1s ease;
+    z-index: 6666;
+    color: #abd914;
+}
+
+
+.quoteHeroSection{
+    width: 400px;
+    height: 200px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+    color: white;
+    transform: rotate(270deg);
+    z-index: 666;
+    position:absolute;
+    left: 1000px;
+    top: 450px;
+    transition: all 0s ease-in;
+    text-align: center;
+    z-index: 555;
+    
+}
+
+.quoteHeroSection:hover{
+    padding: 10px;
+    transform: none;
+    font-size: 30px;
+    font-family: 'Laila';
+    font-weight: 400;
+    transition: all 500ms ease-in;
+    background: rgba( 182, 182, 182, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba(217, 200, 16, 0.37);
+    backdrop-filter: blur( 10.5px );
+    -webkit-backdrop-filter: blur( 10.5px );
+    border-radius: 10px;
+    border: 1px solid  rgba(217, 200, 16, 0.37);
+    /* background: rgba( 182, 182, 182, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10.5px );
+    -webkit-backdrop-filter: blur( 10.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 ); */ 
+    color: #EEBF25;
+}
+
+.buttonHeroSection-01{
+    justify-content: center;
+    background-color: transparent;
+   border-radius: 12px;
+   border-color: #EEBF25;
+    color: #e8e6e2;
+    transition: all 1s ease-in;
+}
+
+.buttunHiddenStatic{
+    display: none;
+    
+}
+
+.quoteHeroSection:hover .buttunHiddenStatic{
+    font-size: 16px;
+    color: aliceblue;
+    display: block;
+    position: absolute;
+    top: 142px;
+    left: 290px;
+    transition: all 1s ease-in;
+    
+    
+}
+
+/* .backgroundoverflow{
+    position: absolute;
+    top: 818px;
+    left: -3;
+    overflow: hidden;
+    width: 100%;
+    height: 65px;
+    background-color: #1D1F26;
+    transform: rotate(3deg);
+    z-index: 555;
+} */
+
+
+
+.worldmap{
+    position: absolute;
+    margin-top: 120px;
+    left: 200px;
+    width: 600px;
+    height: auto;
+    z-index: 888;
+}
+
+
+
+
+.section02{
+    padding: 20px;
+    width: 100%;
+    height: 600px;
+    background-color: #1D1F26;
+}
+
+.textwrapper{
+    width: 500px;
+    padding: 20px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: absolute;
+    left: 800px;
+    margin-top: 40px;
+    font-family: 'Merriweather', serif;
+    transition: all 1s ease-in;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.spellTHE{
+    position: absolute;
+    top: 105px;
+    left: 50px;
+}
+
+.specllWorld{
+    position: absolute;
+    top: 185px;
+    left: 85px;
+    color: #EEBF25;
+}
+
+.textwrapper:hover{
+    color:#EEBF25;
+}
+
+
+.subtextwrapper{
+    width: 400px;
+    position: absolute;
+    left: 825px;
+    margin-top: 350px;
+}
+
+.text03{
+    color: #e8e6e2;
+    text-align: justify;
+}
+
+.buttonExplore{
+    background-color: transparent;
+    border-radius: 10px;
+    color: #EEBF25;
+    border-color: #CACACA;
+    position: absolute;
+    left: 1000px;
+    margin-top: 450px;
+    transition: all 500ms ease-in;
+}
+
+.buttonExplore:hover{
+    font-size: larger;
+    transition: all 500ms ease-in;
+}
+
+.horizontaDivider{
+   margin-top: 530px;
+    color: #abd914;
+}
+
+.wrapperSection03{
+    background-color: #1D1F26;
+    margin: 0px;
+    height: 1000px;
+}
+
+.cards-01{
+    width: 200px;
+    color: #e8e6e2;
+    filter: opacity(1);
+    border-top-left-radius: 325px;
+    padding: 10px;
+}
+
+
+.card-custom{
+    background-color:#313645;
+    color: #CACACA;
+}
+
+.cardImage{
+    height: 300px;
+}
+
+.cardButton{
+    padding: 5px;
+    text-decoration: none;
+    color: #EEBF25;
+    border: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    
+}
+
+.cards-02{
+    width: 200px;
+    color: #e8e6e2;
+    filter: opacity(1);
+    border-top-left-radius: 15px;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+.videoPlace{
+    position: absolute;   
+    left: 950px;
+    top: 550px;
+    transition: all 1s ease;
+}
+
+.videoPlace:hover{
+    position: absolute;   
+    left: 850px;
+    top: 550px;
+    transition: all 1s ease;
+}
+
+.video01{
+    border-radius: 12px;
+    width: 400px;
+    height: 225px;
+    z-index: 666;
+    transition: all 1s ease;
+}
+
+.video01:hover{
+    border-radius: 12px;
+    width: 500px;
+    height: 290px;
+    z-index: 666;
+    transition: all 1s ease;
+}
